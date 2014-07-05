@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:background="@drawable/title_background"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile SafeGuard"
+            android:textColor="#FFF8F8F8"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <SlidingDrawer
+            android:id="@+id/sd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:content="@+id/content"
+            android:handle="@+id/handle"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@id/handle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/slide_up__selector" />
+
+            <LinearLayout
+                android:id="@id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/title_background"
+                android:orientation="vertical" >
+
+                <GridView
+                    android:id="@+id/gv_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="650dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="15dip"
+                    android:horizontalSpacing="10dip"
+                    android:listSelector="@drawable/item_background_selector"
+                    android:numColumns="3"
+                    android:verticalSpacing="15dip" >
+                </GridView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dip"
+                    android:gravity="center_horizontal|center_vertical" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:src="@drawable/yhe_yiding_50" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imageView1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="12dip"
+                        android:text="Copyright:yidinghe2012@gmail.com"
+                        android:textColor="#ffff0000"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </SlidingDrawer>
+
+        <LinearLayout
+            android:id="@+id/ll_main_show_logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible" >
+        
+
+        <ImageView
+            android:id="@+id/im_logo_info"
+            android:onClick="info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/strongbox_main_logo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dip"
+            android:gravity="center_horizontal|center_vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView1"
+                android:src="@drawable/yhe_yiding_50" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView1"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="12dip"
+                android:text="Copyright:yidinghe2012@gmail.com"
+                android:textColor="#ffff0000"
+                android:textSize="22sp" />
+        </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

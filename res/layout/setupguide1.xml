@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/text_title_style"
+        android:text="1.Welcome to Our SafeGuard" />
+
+    <ImageView style="@style/devide_line_style" />
+
+    <TextView
+        style="@style/text_content_style"
+        android:layout_marginTop="15dip"
+        android:text="Your SafeGuard:" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/image_star_style" />
+
+        <TextView
+            style="@style/text_content_style"
+            android:paddingTop="2dip"
+            android:text="sim card change alarm" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/image_star_style" />
+
+        <TextView
+            style="@style/text_content_style"
+            android:paddingTop="2dip"
+            android:text="gps track" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/image_star_style" />
+
+        <TextView
+            style="@style/text_content_style"
+            android:paddingTop="2dip"
+            android:text="remote delete data" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/image_star_style" />
+
+        <TextView
+            style="@style/text_content_style"
+            android:paddingTop="2dip"
+            android:text="remote lock screen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/image_status_on_style" />
+
+        <ImageView style="@style/image_status_off_style" />
+
+        <ImageView style="@style/image_status_off_style" />
+
+        <ImageView style="@style/image_status_off_style" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <LinearLayout
+            android:layout_marginTop="5dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="230dip"
+                android:layout_height="230dip"
+                android:src="@drawable/dx_app_mgr_main_download" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/next"
+            android:text="Next" />
+    </RelativeLayout>
+
+</LinearLayout>

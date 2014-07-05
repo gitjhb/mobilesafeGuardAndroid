@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:background="@drawable/title_background"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BlackList Manager"
+            android:textColor="#FFF8F8F8"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/bt_add_black_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/button_selector"
+            android:text="Add"
+            android:textColor="#FFF8F8F8"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_call_sms_safe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dip"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@drawable/item_background_selector"
+        android:numColumns="3" >
+    </ListView>
+
+</LinearLayout>

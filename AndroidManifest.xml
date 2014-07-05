@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yheproject.mobilesafe"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.yheproject.mobilesafe" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+
+    <application
+        android:name="MyApplication"
+        android:icon="@drawable/logo_icon"
+        android:label="@string/app_name" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.SplashActivity"
+            android:icon="@drawable/logo_icon"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.MainAcitivity"
+            android:label="@string/main_screen"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.LostProtectedActivity"
+            android:label="@string/lost_protected"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.SetupGuide1Activity"
+            android:label="@string/setupguide1" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.SetupGuide2Activity"
+            android:label="@string/setupguide2" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.SetupGuide3Activity"
+            android:label="@string/setupguide3" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.SetupGuide4Activity"
+            android:label="@string/setupguide4" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.SelectContactActivity"
+            android:label="@string/select_contact" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.AtoolsActivity"
+            android:label="@string/atools" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.QueryNumberActivity"
+            android:label="@string/query_number" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.DragviewActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.CallSmsActivity"
+            android:label="@string/call_sms_safe" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.AppManagerActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.AppLockActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.LockScreenActivity"
+            android:label="@string/app_lock_pwd"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.SettingCenterActivity"
+            android:label="@string/setting_center"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.TaskManagerActivity"
+            android:label="@string/task_manager" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.TaskSettingActivity"
+            android:label="@string/task_setting" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.AppDetailActivity"
+            android:label="@string/app_detail"
+            android:theme="@style/activity_float_no_title" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.CommonNumActivity"
+            android:label="@string/common_number"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.TrafficManagerActivity"
+            android:label="@string/traffic_manager"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.InformationActivity"
+            android:label="@string/info_activity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.ClearSystemActivity"
+            android:label="@string/clear_activity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.yheproject.mobilesafe.ui.AntiVirusActivity"
+            android:label="@string/anti_virus"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
+        <service android:name="com.yheproject.mobilesafe.service.AddressService" >
+        </service>
+        <service android:name="com.yheproject.mobilesafe.service.BackupSmsService" >
+        </service>
+        <service android:name="com.yheproject.mobilesafe.service.WatchDogService" >
+        </service>
+        <service android:name="com.yheproject.mobilesafe.service.UpdateWidgetService" >
+        </service>
+
+        <receiver android:name="com.yheproject.mobilesafe.receiver.CallPhoneReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.yheproject.mobilesafe.receiver.LockScreenReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.SCREEN_OFF" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.yheproject.mobilesafe.receiver.BootCompleteReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.yheproject.mobilesafe.receiver.SMSReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.yheproject.mobilesafe.receiver.MyAdmin" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/my_admin" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.yheproject.mobilesafe.receiver.ProcessWidget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/example_appwidget_info" />
+        </receiver>
+
+        <provider
+            android:name="com.yheproject.mobilesafe.provider.AppLockProvider"
+            android:authorities="com.yheproject.applockprovider" >
+        </provider>
+    </application>
+
+</manifest>
