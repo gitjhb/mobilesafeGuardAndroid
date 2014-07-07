@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.yheproject.mobilesafe"
-    android:versionCode="5"
-    android:versionName="1.0.4" >
+    android:versionCode="6"
+    android:versionName="1.0.5" >
 
     <supports-screens
         android:largeScreens="true"
@@ -29,7 +29,6 @@
     <uses-feature
         android:name="android.hardware.touchscreen"
         android:required="false" />
-   
 
     <instrumentation
         android:name="android.test.InstrumentationTestRunner"
@@ -84,31 +83,38 @@
         </activity>
         <activity
             android:name="com.yheproject.mobilesafe.ui.SetupGuide1Activity"
-            android:label="@string/setupguide1" >
+            android:label="@string/setupguide1"
+            android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
             android:name="com.yheproject.mobilesafe.ui.SetupGuide2Activity"
-            android:label="@string/setupguide2" >
+            android:label="@string/setupguide2"
+            android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
             android:name="com.yheproject.mobilesafe.ui.SetupGuide3Activity"
-            android:label="@string/setupguide3" >
+            android:label="@string/setupguide3"
+            android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
             android:name="com.yheproject.mobilesafe.ui.SetupGuide4Activity"
-            android:label="@string/setupguide4" >
+            android:label="@string/setupguide4"
+            android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
             android:name="com.yheproject.mobilesafe.ui.SelectContactActivity"
-            android:label="@string/select_contact" >
+            android:label="@string/select_contact"
+            android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
             android:name="com.yheproject.mobilesafe.ui.AtoolsActivity"
-            android:label="@string/atools" >
+            android:label="@string/atools"
+            android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
             android:name="com.yheproject.mobilesafe.ui.QueryNumberActivity"
-            android:label="@string/query_number" >
+            android:label="@string/query_number"
+            android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
             android:name="com.yheproject.mobilesafe.ui.DragviewActivity"
@@ -116,7 +122,8 @@
         </activity>
         <activity
             android:name="com.yheproject.mobilesafe.ui.CallSmsActivity"
-            android:label="@string/call_sms_safe" >
+            android:label="@string/call_sms_safe"
+            android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
             android:name="com.yheproject.mobilesafe.ui.AppManagerActivity"
@@ -138,11 +145,13 @@
         </activity>
         <activity
             android:name="com.yheproject.mobilesafe.ui.TaskManagerActivity"
-            android:label="@string/task_manager" >
+            android:label="@string/task_manager"
+            android:theme="@android:style/Theme.Light" >
         </activity>
         <activity
             android:name="com.yheproject.mobilesafe.ui.TaskSettingActivity"
-            android:label="@string/task_setting" >
+            android:label="@string/task_setting"
+            android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
             android:name="com.yheproject.mobilesafe.ui.AppDetailActivity"
