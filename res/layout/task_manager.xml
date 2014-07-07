@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" >
+
+        <ListView
+            android:id="@+id/lv_task_manager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dip"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@drawable/item_background_selector" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/ll_task_manager_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ProgressBar
+                android:layout_width="90dip"
+                android:layout_height="90dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading all the apps"
+                android:textColor="@android:color/white"
+                android:textSize="28sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            style="@style/MainMenuButton"
+            android:layout_marginRight="20dip"
+            android:onClick="killTask"
+            android:text="Clean" />
+
+        <Button
+            style="@style/MainMenuButton"
+            android:onClick="appSetting"
+            android:text="Setting" />
+    </LinearLayout>
+
+</LinearLayout>
