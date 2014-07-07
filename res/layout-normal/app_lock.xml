@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/Title"
+        android:layout_width="match_parent"
+        android:layout_height="40dip" >
+
+        <TextView
+            style="@style/Title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Software Lock" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lv_app_lock"
+            style="@style/margin_top_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/ll_app_manager_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ProgressBar
+                android:layout_width="45dip"
+                android:layout_height="45dip" />
+
+            <TextView
+                style="@style/Normal_text_style_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Loading all the apps" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

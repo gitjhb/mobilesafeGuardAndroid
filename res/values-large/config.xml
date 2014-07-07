@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="updateurl">http://128.119.23.115:8080/update.xml</string>
+    <string name="addressdburl">http://128.119.23.115:8080/address.db</string>
+    
+</resources>
