@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageInfo;
@@ -14,8 +15,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+import android.view.Display;
 import android.view.Gravity;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.view.animation.ScaleAnimation;
 import android.widget.AbsListView;
@@ -100,9 +103,8 @@ public class AppManagerActivity extends Activity implements OnClickListener {
 				// 获取当前view对象在窗体中的位置
 				int[] arrayOfInt = new int[2];
 				view.getLocationInWindow(arrayOfInt);
-
-				int i = arrayOfInt[0] + 160;
-				int j = arrayOfInt[1];
+				int i=0,j=0;
+				
 
 				AppInfo info = (AppInfo) lv_app_manager
 						.getItemAtPosition(position);
@@ -134,7 +136,20 @@ public class AppManagerActivity extends Activity implements OnClickListener {
 						.findViewById(R.id.ll_popup);
 				ScaleAnimation sa = new ScaleAnimation(0.0f, 1.0f, 0.0f, 1.0f);
 				sa.setDuration(200);
-				localPopupWindow = new PopupWindow(popupview, 900, 200);
+				WindowManager manager = (WindowManager) AppManagerActivity.this.
+						getSystemService(Context.WINDOW_SERVICE);
+				Display display = manager.getDefaultDisplay();
+				int height = display.getHeight();
+				int width = display.getWidth();
+				if(height>800 || width> 480){
+					 i = arrayOfInt[0] + 160;
+					 j = arrayOfInt[1];
+				localPopupWindow = new PopupWindow(popupview, 900, 200);}
+				else {
+					i = arrayOfInt[0] + 70;
+					j=arrayOfInt[1];
+					localPopupWindow = new PopupWindow(popupview, 260, 70);
+				}
 				// 一定要记得给popupwindow设置背景颜色
 				// Drawable background = new ColorDrawable(Color.TRANSPARENT);
 				Drawable background = getResources().getDrawable(

@@ -79,4 +79,9 @@
         <item name="android:gravity">center_horizontal</item>
     </style>
 
+    <string name="Version_welcome_screen">
+        <item name="android:textColor">#ff01b6f8</item>
+        <item name="android:textSize">40sp</item>   
+    </string>
+
 </resources>

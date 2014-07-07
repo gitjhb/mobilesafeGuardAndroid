@@ -25,13 +25,17 @@
         \n&#160;&#160;&#160;&#160;&#160;&#160;Mobile SafeGuard is an app can help people protect their cellphones and tablets.
         \n&#160;&#160;&#160;&#160;&#160;&#160;The app has several main functions.
         \n&#160;&#160;&#160;&#160;&#160;&#160;Main Functions includes ：Safe Guard, Comm Guard, App Manager, Task Manager, Traffic Manager, Antivirus, System Opt, Advanced Tools, Setting center.</string>
-    <string name="contact_info">Any questions or feedback, please contact \n
-		yidinghe2012@gmail.com</string>
-    <string name="information_copyright">©2014 Y HE.</string>
+    <string name="contact_info">This app is built for learning and studying. \n Any questions or feedback,\nplease contact us. </string>
+    <string name="information_copyright">©2014 Y HE, H JIA.</string>
     <string name="mainBoard">mainBoard</string>
     <string name="info_activity">information for app</string>
     <string name="clear_activity">clear your system</string>
     <string name="anti_virus">Antivirus</string>
+    <string name="see_the_instruction">Please click our icon to see the instructions.</string>
+    <string name="version">Version</string>
+ 
+    
+    <string name="Image_margin_top">10dip</string>
     
 
 </resources>

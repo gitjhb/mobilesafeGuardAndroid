@@ -14,6 +14,8 @@ public class MyApplication extends Application {
 	public void onCreate() {
 		// TODO Auto-generated method stub
 		super.onCreate();
+		
+		
         IntentFilter filter = new IntentFilter(Intent.ACTION_SCREEN_OFF);
         filter.setPriority(1000);
         LockScreenReceiver recevier = new LockScreenReceiver();

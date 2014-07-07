@@ -17,4 +17,14 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="styleName">
+        <item name="android:background">@drawable/title_background</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="Title">
+        <item name="android:background">@drawable/title_background</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
 </resources>

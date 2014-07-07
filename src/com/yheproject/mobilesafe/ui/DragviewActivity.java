@@ -9,10 +9,12 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.Display;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
@@ -64,13 +66,29 @@ public class DragviewActivity extends Activity implements OnTouchListener {
 				startY = (int) event.getRawY();
 				break;
 			case MotionEvent.ACTION_MOVE:
+				
+				WindowManager manager = (WindowManager) DragviewActivity.this.getSystemService(Context.WINDOW_SERVICE);
+				Display display= manager.getDefaultDisplay();
+				int height= display.getHeight();
+				int width= display.getWidth();
 				int x = (int) event.getRawX();
 				int y = (int) event.getRawY();
-				if (y<900) {
-					tv_drag_view.layout(tv_drag_view.getLeft(), 1400, tv_drag_view.getRight(), 1640);
-				}else {
-					tv_drag_view.layout(tv_drag_view.getLeft(), 120, tv_drag_view.getRight(), 360);
+				if(height>800 || width> 480){
+					if (y<900) {
+						tv_drag_view.layout(tv_drag_view.getLeft(), 1400, tv_drag_view.getRight(), 1640);
+					}else {
+						tv_drag_view.layout(tv_drag_view.getLeft(), 120, tv_drag_view.getRight(), 360);
+					}
 				}
+				else {
+					if (y<400) {
+						tv_drag_view.layout(tv_drag_view.getLeft(), 500, tv_drag_view.getRight(), 600);
+					}else {
+						tv_drag_view.layout(tv_drag_view.getLeft(), 120, tv_drag_view.getRight(), 220);
+					}
+					
+				}
+				
 				// 获取手指移动的距离
 				int dx = x - startX;
 				int dy = y - startY;

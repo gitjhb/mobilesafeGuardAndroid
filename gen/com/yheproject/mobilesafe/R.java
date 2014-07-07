@@ -26,6 +26,8 @@ public final class R {
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
+ Default screen margins, per the Android Design guidelines. 
+ Default screen margins, per the Android Design guidelines. 
 
          Customize dimensions originally defined in res/values/dimens.xml (such as
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
@@ -136,35 +138,35 @@ public final class R {
         public static final int yhe_yiding_50=0x7f020062;
     }
     public static final class id {
-        public static final int action_settings=0x7f0c006a;
+        public static final int action_settings=0x7f0c006b;
         public static final int bt_add_black_number=0x7f0c001f;
-        public static final int bt_bind=0x7f0c0050;
+        public static final int bt_bind=0x7f0c0051;
         public static final int bt_first_dialog_cancel=0x7f0c002e;
         public static final int bt_first_dialog_confirm=0x7f0c002d;
-        public static final int bt_next=0x7f0c004f;
-        public static final int bt_normal_dialog_cancel=0x7f0c0041;
-        public static final int bt_normal_dialog_confirm=0x7f0c0040;
-        public static final int bt_previous=0x7f0c0052;
-        public static final int bt_select_contact=0x7f0c0054;
-        public static final int bt_setup_finish=0x7f0c0055;
-        public static final int btn_clear=0x7f0c0048;
-        public static final int button1=0x7f0c004a;
+        public static final int bt_next=0x7f0c0050;
+        public static final int bt_normal_dialog_cancel=0x7f0c0042;
+        public static final int bt_normal_dialog_confirm=0x7f0c0041;
+        public static final int bt_previous=0x7f0c0053;
+        public static final int bt_select_contact=0x7f0c0055;
+        public static final int bt_setup_finish=0x7f0c0056;
+        public static final int btn_clear=0x7f0c0049;
+        public static final int button1=0x7f0c004b;
         public static final int cb_atools_address=0x7f0c0017;
-        public static final int cb_bind=0x7f0c0051;
+        public static final int cb_bind=0x7f0c0052;
         public static final int cb_isprotecting=0x7f0c0032;
-        public static final int cb_kill_process=0x7f0c0061;
-        public static final int cb_setting_applock=0x7f0c004e;
-        public static final int cb_show_system_checked=0x7f0c005f;
-        public static final int cb_task_checked=0x7f0c005b;
+        public static final int cb_kill_process=0x7f0c0062;
+        public static final int cb_setting_applock=0x7f0c004f;
+        public static final int cb_show_system_checked=0x7f0c0060;
+        public static final int cb_task_checked=0x7f0c005c;
         public static final int content=0x7f0c0036;
-        public static final int delete_number=0x7f0c0069;
+        public static final int delete_number=0x7f0c006a;
         public static final int elv=0x7f0c0028;
         public static final int et_app_lock_pwd=0x7f0c0012;
         public static final int et_first_entry_confirm=0x7f0c002c;
         public static final int et_first_entry_pwd=0x7f0c002b;
-        public static final int et_normal_entry_pwd=0x7f0c003f;
-        public static final int et_query_number=0x7f0c0049;
-        public static final int et_setup3_number=0x7f0c0053;
+        public static final int et_normal_entry_pwd=0x7f0c0040;
+        public static final int et_query_number=0x7f0c004a;
+        public static final int et_setup3_number=0x7f0c0054;
         public static final int gv_main=0x7f0c0038;
         public static final int handle=0x7f0c0037;
         public static final int im_logo_info=0x7f0c003a;
@@ -176,38 +178,39 @@ public final class R {
         public static final int iv_app_lock_status=0x7f0c0030;
         public static final int iv_drag_view=0x7f0c0029;
         public static final int iv_icon=0x7f0c0027;
-        public static final int iv_main_icon=0x7f0c003b;
-        public static final int iv_my_toast=0x7f0c003d;
-        public static final int iv_traffic_icon=0x7f0c0062;
+        public static final int iv_main_icon=0x7f0c003c;
+        public static final int iv_my_toast=0x7f0c003e;
+        public static final int iv_traffic_icon=0x7f0c0063;
         public static final int ll_antivirus=0x7f0c0007;
         public static final int ll_app_manager_loading=0x7f0c000f;
-        public static final int ll_location=0x7f0c0056;
+        public static final int ll_location=0x7f0c0057;
         public static final int ll_main_show_logo=0x7f0c0039;
-        public static final int ll_popup=0x7f0c0042;
+        public static final int ll_popup=0x7f0c0043;
         public static final int ll_reentry_setup_guide=0x7f0c0014;
-        public static final int ll_share=0x7f0c0045;
+        public static final int ll_share=0x7f0c0046;
         public static final int ll_splash_main=0x7f0c0000;
-        public static final int ll_start=0x7f0c0044;
-        public static final int ll_task_manager_loading=0x7f0c0059;
-        public static final int ll_uninstall=0x7f0c0043;
+        public static final int ll_start=0x7f0c0045;
+        public static final int ll_task_manager_loading=0x7f0c005a;
+        public static final int ll_uninstall=0x7f0c0044;
         public static final int lv_app_lock=0x7f0c000e;
         public static final int lv_app_manager=0x7f0c0013;
         public static final int lv_call_sms_safe=0x7f0c0020;
-        public static final int lv_select_contact=0x7f0c004c;
-        public static final int lv_task_manager=0x7f0c0058;
+        public static final int lv_select_contact=0x7f0c004d;
+        public static final int lv_task_manager=0x7f0c0059;
         public static final int pb_antivirus=0x7f0c0005;
         public static final int pb_clean=0x7f0c0026;
-        public static final int process_count=0x7f0c0046;
-        public static final int process_memory=0x7f0c0047;
+        public static final int process_count=0x7f0c0047;
+        public static final int process_memory=0x7f0c0048;
         public static final int sd=0x7f0c0035;
         public static final int sv_antivirus=0x7f0c0006;
         public static final int sv_app_detail=0x7f0c000a;
         public static final int textView1=0x7f0c0034;
+        public static final int textView2=0x7f0c003b;
         public static final int tv_app_detail_name=0x7f0c0008;
         public static final int tv_app_detail_packname=0x7f0c0009;
         public static final int tv_app_lock_pwd_name=0x7f0c0011;
         public static final int tv_app_manager_title=0x7f0c0003;
-        public static final int tv_app_memory_size=0x7f0c005a;
+        public static final int tv_app_memory_size=0x7f0c005b;
         public static final int tv_app_name=0x7f0c000d;
         public static final int tv_app_packname=0x7f0c002f;
         public static final int tv_atools_address=0x7f0c0016;
@@ -218,31 +221,31 @@ public final class R {
         public static final int tv_atools_select_bg=0x7f0c0018;
         public static final int tv_atools_sms_backup=0x7f0c001a;
         public static final int tv_atools_sms_restore=0x7f0c001b;
-        public static final int tv_avail_memory=0x7f0c005d;
+        public static final int tv_avail_memory=0x7f0c005e;
         public static final int tv_blacknumber_item=0x7f0c001e;
         public static final int tv_cache_size=0x7f0c0023;
         public static final int tv_clean=0x7f0c0025;
         public static final int tv_code_size=0x7f0c0022;
         public static final int tv_data_size=0x7f0c0024;
         public static final int tv_drag_view=0x7f0c002a;
-        public static final int tv_kill_process=0x7f0c0060;
-        public static final int tv_location=0x7f0c0057;
+        public static final int tv_kill_process=0x7f0c0061;
+        public static final int tv_location=0x7f0c0058;
         public static final int tv_lost_protected_number=0x7f0c0031;
-        public static final int tv_main_name=0x7f0c003c;
-        public static final int tv_mobile_total=0x7f0c0067;
-        public static final int tv_my_toast=0x7f0c003e;
+        public static final int tv_main_name=0x7f0c003d;
+        public static final int tv_mobile_total=0x7f0c0068;
+        public static final int tv_my_toast=0x7f0c003f;
         public static final int tv_name=0x7f0c0021;
-        public static final int tv_query_number_address=0x7f0c004b;
+        public static final int tv_query_number_address=0x7f0c004c;
         public static final int tv_reentry_setup_guide=0x7f0c0033;
-        public static final int tv_setting_applock=0x7f0c004d;
-        public static final int tv_show_system_app=0x7f0c005e;
+        public static final int tv_setting_applock=0x7f0c004e;
+        public static final int tv_show_system_app=0x7f0c005f;
         public static final int tv_splash_version=0x7f0c0002;
-        public static final int tv_task_count=0x7f0c005c;
-        public static final int tv_traffic_name=0x7f0c0063;
-        public static final int tv_traffic_rx=0x7f0c0065;
-        public static final int tv_traffic_tx=0x7f0c0064;
-        public static final int tv_wifi_total=0x7f0c0066;
-        public static final int update_number=0x7f0c0068;
+        public static final int tv_task_count=0x7f0c005d;
+        public static final int tv_traffic_name=0x7f0c0064;
+        public static final int tv_traffic_rx=0x7f0c0066;
+        public static final int tv_traffic_tx=0x7f0c0065;
+        public static final int tv_wifi_total=0x7f0c0067;
+        public static final int update_number=0x7f0c0069;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -294,6 +297,8 @@ public final class R {
         public static final int ylzs=0x7f060000;
     }
     public static final class string {
+        public static final int Image_margin_top=0x7f08001f;
+        public static final int Version_welcome_screen=0x7f080020;
         public static final int action_settings=0x7f080003;
         public static final int addressdburl=0x7f080001;
         public static final int anti_virus=0x7f08001c;
@@ -313,6 +318,7 @@ public final class R {
         public static final int mainBoard=0x7f080019;
         public static final int main_screen=0x7f080005;
         public static final int query_number=0x7f08000d;
+        public static final int see_the_instruction=0x7f08001d;
         public static final int select_contact=0x7f08000b;
         public static final int setting_center=0x7f080010;
         public static final int setupguide1=0x7f080007;
@@ -323,6 +329,7 @@ public final class R {
         public static final int task_setting=0x7f080012;
         public static final int traffic_manager=0x7f080015;
         public static final int updateurl=0x7f080000;
+        public static final int version=0x7f08001e;
     }
     public static final class style {
         /** 
@@ -334,21 +341,42 @@ public final class R {
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         
+
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
          */
-        public static final int AppBaseTheme=0x7f0a000b;
+        public static final int AppBaseTheme=0x7f0a0013;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
+ Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f0a000c;
+        public static final int AppTheme=0x7f0a0014;
         public static final int Clear_text_style=0x7f0a000a;
         public static final int MainMenuButton=0x7f0a0007;
         public static final int MyDialog=0x7f0a0000;
+        public static final int Normal_text_style_red=0x7f0a000f;
+        public static final int Normal_text_style_red_large=0x7f0a0010;
+        public static final int Normal_text_style_white=0x7f0a000e;
+        public static final int Normal_text_style_white_large=0x7f0a0011;
+        public static final int Normal_text_style_white_small=0x7f0a0012;
         public static final int SmallPicButton=0x7f0a0009;
+        public static final int Title=0x7f0a0016;
+        public static final int Title_text_style=0x7f0a000c;
+        public static final int Version_welcome_screen=0x7f0a000b;
         public static final int activity_float_no_title=0x7f0a0008;
         public static final int devide_line_style=0x7f0a0002;
         public static final int image_star_style=0x7f0a0004;
         public static final int image_status_off_style=0x7f0a0006;
         public static final int image_status_on_style=0x7f0a0005;
+        public static final int margin_top_style=0x7f0a000d;
+        public static final int styleName=0x7f0a0015;
         public static final int text_content_style=0x7f0a0003;
         public static final int text_title_style=0x7f0a0001;
     }

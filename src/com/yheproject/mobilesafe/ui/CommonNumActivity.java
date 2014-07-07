@@ -6,12 +6,15 @@ import java.io.IOException;
 import java.io.InputStream;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.res.AssetManager;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.Display;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
@@ -21,6 +24,8 @@ import com.yheproject.mobilesafe.R;
 public class CommonNumActivity extends Activity {
 	private ExpandableListView elv;
 	private BaseExpandableListAdapter adapter;
+	private int height;
+	private int width;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +33,10 @@ public class CommonNumActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.common_num_query);
 		elv = (ExpandableListView) this.findViewById(R.id.elv);
+		WindowManager manager = (WindowManager) CommonNumActivity.this.getSystemService(Context.WINDOW_SERVICE);
+		Display display= manager.getDefaultDisplay();
+		 height= display.getHeight();
+		 width= display.getWidth();
 
 		// 判断这个commonnum.db的数据库是否被放置到了sd卡上
 		// 如果不在sd卡上 要把db从asset目录拷贝到数据库
@@ -139,7 +148,12 @@ public class CommonNumActivity extends Activity {
 				View convertView, ViewGroup parent) {
 			// TODO Auto-generated method stub
 			TextView tv = new TextView(CommonNumActivity.this);
-			tv.setTextSize(28);
+			if (height>800 || width >600) {
+				tv.setTextSize(28);
+			}
+			else {
+				tv.setTextSize(20);
+			}
 			String text = "";
 			int currentpos = groupPosition + 1;
 			SQLiteDatabase db = SQLiteDatabase.openDatabase(
@@ -161,7 +175,12 @@ public class CommonNumActivity extends Activity {
 		public View getChildView(int groupPosition, int childPosition,
 				boolean isLastChild, View convertView, ViewGroup parent) {
 			TextView tv = new TextView(CommonNumActivity.this);
-			tv.setTextSize(22);
+			if (height>800 || width >600) {
+				tv.setTextSize(22);
+			}
+			else {
+				tv.setTextSize(14);
+			}
 			StringBuilder sb = new StringBuilder();
 			int tableindex = groupPosition + 1;
 			int childindex = childPosition + 1;
